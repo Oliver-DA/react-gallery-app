@@ -1,8 +1,9 @@
 import React from 'react';
 import Photo from './Photo';
 
-const PhotoContainer = ({ photos,title }) => {
 
+const PhotoContainer = ({ photos,title }) => {
+    
     let results = photos.map( photo => (
         <Photo
             url = {`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}

@@ -1,7 +1,8 @@
 import React from 'react';
 import PhotoContainer from './PhotoContainer';
+import NotFound from './NotFound';
 
-const SearchForm = ({ handleSearch,searchedResults }) =>{
+const SearchForm = ({ handleSearch, searchedResults, title }) =>{
 
     const userInput = React.createRef()
 
@@ -23,7 +24,7 @@ const SearchForm = ({ handleSearch,searchedResults }) =>{
                 </button>
             </form>
 
-            { searchedResults.length > 0 ? <PhotoContainer photos = { searchedResults } /> : null }
+            { searchedResults.length === 0 && title ? <NotFound /> :<PhotoContainer photos = { searchedResults } title = {title} /> }
         </>
     )    
 }

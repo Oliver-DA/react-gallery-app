@@ -4,6 +4,13 @@ body {
   color: #3f4850;
 }
 
+span {
+  display: block;
+  padding: 0 0 30px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 h2 {
   font-size: 2em;
   margin: 52px 0 40px;
@@ -17,6 +24,10 @@ ul {
 
 a {
   text-decoration: none;
+  color: #fff;
+  background-color: teal;
+  padding: 7px;
+  border-radius: 7px;
 }
 
 .search-form {
@@ -72,6 +83,9 @@ input {
   align-items: flex-start;
 }
 
+.not-found {
+  list-style-type: none;
+}
 .photo-container ul li {
   width: 220px;
   height: 165px;
@@ -91,6 +105,11 @@ input {
 
 .photo-container .not-found {
   width: 100%;
+}
+
+.badUrl {
+  color: red;
+  display: inline;
 }
 
 @media only screen and (max-width: 767px)  {

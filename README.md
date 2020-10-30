@@ -1,3 +1,10 @@
+# Setting up the API
+
+In order to use the flicker api you must provide an api key into a file
+that needs to be created inside /src called config.js an formatted this way ->
+const apiKey = "YOUR_API_KEY";
+export default apiKey
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
