@@ -4,8 +4,11 @@ import NotFound from './NotFound';
 
 const SearchForm = ({ handleSearch, searchedResults, title }) =>{
 
+    //Create a ref object to point at the input field
     const userInput = React.createRef()
 
+    //Prevents the page from refreshing on submit and calls thehandleSearch function
+    //passing the value of the input field as argument
     const handleSubmit = e => {
         e.preventDefault();
         handleSearch(userInput.current.value);
@@ -23,7 +26,7 @@ const SearchForm = ({ handleSearch, searchedResults, title }) =>{
                 </svg>
                 </button>
             </form>
-
+            {/* if there is a tittle but no photos display a not found message else add the photos to the PhotoContainer component */}
             { searchedResults.length === 0 && title ? <NotFound /> :<PhotoContainer photos = { searchedResults } title = {title} /> }
         </>
     )    

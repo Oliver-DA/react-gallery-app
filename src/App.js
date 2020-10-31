@@ -1,3 +1,4 @@
+//Lybraries
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
@@ -51,6 +52,7 @@ class App extends Component {
       title: query,
       loading:false
     }))
+    .catch(err => console.log(`There was an error fetchin (${query}) images`,err))
 }
 
   render(){
@@ -60,7 +62,6 @@ class App extends Component {
         <div className = "container">
         <NavBar />
         <Switch>
-
           <Route exact path = "/" render = { () => <PhotoContainer photos = {this.state.homeImages} title = "home" />} />
           <Route path = "/search" render = { () =>
             this.state.loading

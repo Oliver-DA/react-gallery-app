@@ -1,7 +1,8 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3f4850;
+  color: #02c4ac;
+  background: #fff;
 }
 
 span {
@@ -15,6 +16,7 @@ h2 {
   font-size: 2em;
   margin: 52px 0 40px;
   text-transform: capitalize;
+  text-shadow: 1px 2px 1px  #606060;
 }
 
 ul {
@@ -24,10 +26,16 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fff;
-  background-color: teal;
+  color: #0aa7a0;
+  border: 2px solid #0aa7a0;
   padding: 7px;
   border-radius: 7px;
+  transition: all .4s ease ;
+}
+
+a:hover {
+  background-color: #0aa7a0;
+  color: #fff;
 }
 
 .search-form {
@@ -38,7 +46,7 @@ a {
 
 .search-form button {
   outline: none;
-  background-color: #438bbd;
+  background-color: #0aa7a0;
   border: none;
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
@@ -48,9 +56,9 @@ a {
 input {
   font-size: 1em;
   width: 100%;
-  background-color: #edeff0;
+  background-color: #fff;
   padding: 10px 15px;
-  border: 3px solid #d7dbdf;
+  border: 3px solid #0aa7a0;
   border-right: none;
   border-radius: 0.35em 0 0 0.35em;
   outline: none;
@@ -63,7 +71,7 @@ input {
 
 .main-nav a {
   display: block;
-  background: #438bbd;
+  background: #0aa7a0;
   border-radius: 3px;
   padding: 5px;
   color: #fff;
@@ -72,7 +80,7 @@ input {
 .main-nav .active,
 .main-nav a:hover,
 .search-form button:hover {
-  background-color: #275270;
+  background-color: #09f0e5;
 }
 
 .photo-container ul {

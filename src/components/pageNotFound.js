@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PageNotFound = ({ match}) => {
-    
+
+    //Wrong url enter by the user
     const { badUrl } = match.params
 
     return (
